@@ -226,10 +226,117 @@ h2.about-header{
 }
 
 /******** SKILLS *******/
-.skills{
+#skills{
   background-color: #e0225e;
   height: 768px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.skills-wrapper{
+  width:80%;
+  display: flex;
+  justify-content: space-between;
+  justify-items: flex-end;
+  flex-wrap: wrap;
+}
+
+#skills h2{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  color: white;
+  font-size: 40px; 
+  text-align: left;
+  margin: 0;
+}
+
+.rating-block{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+#tool-and-craft{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#tool-and-craft .rating-block{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+#skills ul{
+  list-style: none;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#skills li:hover{
+  background-color: #d85082; 
+  }
+
+#skills li{
+  padding: 10px 20px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  line-height: 1.35;
+}
+
+.rating{
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#skills li:hover .rating{
+  width: 130px;
+}
+
+.fa-star{
+  color: white;
+  font-size: 75%;
+}
+
+@media (max-width: 925px) {
+#skills{
+  height: auto;
+}
+
+  .skills-wrapper{
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  #skills h2{
+    text-align: center;
+    padding: 20px 0 0 0;
+  }
+
+  .rating-block{
+    width: 100%;
+    padding: 0 0 20px 0;
+  }
+  #tool-and-craft{
+    width: 100%;
+  }
 }
 
 /******** TRAVEL *******/
@@ -271,7 +378,7 @@ h2.about-header{
     flex-grow: 1;
   }
   .travel li {
-    font-size: 4vw;
+    font-size: 25px;
     text-align: center;
     padding: 1% 10px 0px 10px;
   }
@@ -286,6 +393,6 @@ h2.about-header{
     flex:1;
     padding: 0 10% 5% 0;
     width: 110%;
-    transform: translateY(0px)
+    transform: translateY(0px);
   }
 }
