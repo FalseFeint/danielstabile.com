@@ -120,21 +120,38 @@ nav ul{
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  width: 25%;
+  justify-items: center;
+  align-content: space-between;
+  align-items: flex-start;
+  width: 50%;
+  min-width: 350px;
+  max-width: 800px;
+  height: 200px;
+  max-height: 100px;
   left: 10%;
   top: 200px;
   z-index: 100;
-}
 
-#social-links img:hover{
-  border-radius: 50%;
-  height:80px;
+  padding: 10px;
 }
 
 #social-links img{
-  height: 75px;
+  width: 100%;
+  margin: 2%;
+  padding: 2%;
+}
+
+#social-links img:hover{
+  margin: 0;
+}
+
+#social-links a{
+  width: 25%; /* If new social links are added this value needs to be reduced proportionally*/
+  height: auto;
+  max-width: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
 }
 
 #portrait {
@@ -382,7 +399,7 @@ h2.about-header{
     padding: 20px 0 20px 0;
     margin-bottom: 0%;
     transform: translateX(0px);
-    width: 100%;
+    width: 80%;
   }
   .travel img{
     flex:1;
